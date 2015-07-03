@@ -15,6 +15,8 @@
 		8425248E1B473B0700FC0090 /* inputAccessoryViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425248D1B473B0700FC0090 /* inputAccessoryViewTests.m */; };
 		842524991B473C4200FC0090 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842524981B473C4200FC0090 /* TableViewController.m */; };
 		8425249C1B473D2A00FC0090 /* inputAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425249B1B473D2A00FC0090 /* inputAccessoryViewController.m */; };
+		8425249F1B47443300FC0090 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425249E1B47443300FC0090 /* TextField.m */; };
+		842524A21B4747D700FC0090 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 842524A11B4747D700FC0090 /* UIResponder+FirstResponder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		842524981B473C4200FC0090 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		8425249A1B473D2A00FC0090 /* inputAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputAccessoryViewController.h; sourceTree = "<group>"; };
 		8425249B1B473D2A00FC0090 /* inputAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inputAccessoryViewController.m; sourceTree = "<group>"; };
+		8425249D1B47443300FC0090 /* TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextField.h; path = ../TextField.h; sourceTree = "<group>"; };
+		8425249E1B47443300FC0090 /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextField.m; path = ../TextField.m; sourceTree = "<group>"; };
+		842524A01B4747D700FC0090 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
+		842524A11B4747D700FC0090 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 		842524701B473B0700FC0090 /* inputAccessoryView */ = {
 			isa = PBXGroup;
 			children = (
+				842524A01B4747D700FC0090 /* UIResponder+FirstResponder.h */,
+				842524A11B4747D700FC0090 /* UIResponder+FirstResponder.m */,
+				8425249D1B47443300FC0090 /* TextField.h */,
+				8425249E1B47443300FC0090 /* TextField.m */,
 				842524751B473B0700FC0090 /* AppDelegate.h */,
 				842524761B473B0700FC0090 /* AppDelegate.m */,
 				842524781B473B0700FC0090 /* ViewController.h */,
@@ -226,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8425249C1B473D2A00FC0090 /* inputAccessoryViewController.m in Sources */,
+				8425249F1B47443300FC0090 /* TextField.m in Sources */,
 				8425247A1B473B0700FC0090 /* ViewController.m in Sources */,
+				842524A21B4747D700FC0090 /* UIResponder+FirstResponder.m in Sources */,
 				842524771B473B0700FC0090 /* AppDelegate.m in Sources */,
 				842524741B473B0700FC0090 /* main.m in Sources */,
 				842524991B473C4200FC0090 /* TableViewController.m in Sources */,
@@ -420,6 +432,7 @@
 				842524931B473B0700FC0090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842524941B473B0700FC0090 /* Build configuration list for PBXNativeTarget "inputAccessoryViewTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +441,7 @@
 				842524961B473B0700FC0090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

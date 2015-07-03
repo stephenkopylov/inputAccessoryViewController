@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextField.h"
 
 @interface inputAccessoryViewController : UIInputViewController
+
+@property (nonatomic, strong) TextField *textField;
 
 @end
