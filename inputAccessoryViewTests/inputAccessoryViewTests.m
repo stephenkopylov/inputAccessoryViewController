@@ -1,19 +1,19 @@
 //
-//  inputAccessoryViewControllerTestTests.m
-//  inputAccessoryViewControllerTestTests
+//  inputAccessoryViewTests.m
+//  inputAccessoryViewTests
 //
-//  Created by rovaev on 02.07.15.
-//  Copyright (c) 2015 rovaev. All rights reserved.
+//  Created by Admin on 04.07.15.
+//  Copyright (c) 2015 Admin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface inputAccessoryViewControllerTestTests : XCTestCase
+@interface inputAccessoryViewTests : XCTestCase
 
 @end
 
-@implementation inputAccessoryViewControllerTestTests
+@implementation inputAccessoryViewTests
 
 - (void)setUp {
     [super setUp];

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE442CFA1B45A64900F6F3DA"
-               BuildableName = "inputAccessoryViewControllerTest.app"
-               BlueprintName = "inputAccessoryViewControllerTest"
-               ReferencedContainer = "container:inputAccessoryViewControllerTest.xcodeproj">
+               BlueprintIdentifier = "8425246D1B473B0700FC0090"
+               BuildableName = "inputAccessoryView.app"
+               BlueprintName = "inputAccessoryView"
+               ReferencedContainer = "container:inputAccessoryView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE442D131B45A64900F6F3DA"
-               BuildableName = "inputAccessoryViewControllerTestTests.xctest"
-               BlueprintName = "inputAccessoryViewControllerTestTests"
-               ReferencedContainer = "container:inputAccessoryViewControllerTest.xcodeproj">
+               BlueprintIdentifier = "842524861B473B0700FC0090"
+               BuildableName = "inputAccessoryViewTests.xctest"
+               BlueprintName = "inputAccessoryViewTests"
+               ReferencedContainer = "container:inputAccessoryView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE442D131B45A64900F6F3DA"
-               BuildableName = "inputAccessoryViewControllerTestTests.xctest"
-               BlueprintName = "inputAccessoryViewControllerTestTests"
-               ReferencedContainer = "container:inputAccessoryViewControllerTest.xcodeproj">
+               BlueprintIdentifier = "842524861B473B0700FC0090"
+               BuildableName = "inputAccessoryViewTests.xctest"
+               BlueprintName = "inputAccessoryViewTests"
+               ReferencedContainer = "container:inputAccessoryView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE442CFA1B45A64900F6F3DA"
-            BuildableName = "inputAccessoryViewControllerTest.app"
-            BlueprintName = "inputAccessoryViewControllerTest"
-            ReferencedContainer = "container:inputAccessoryViewControllerTest.xcodeproj">
+            BlueprintIdentifier = "8425246D1B473B0700FC0090"
+            BuildableName = "inputAccessoryView.app"
+            BlueprintName = "inputAccessoryView"
+            ReferencedContainer = "container:inputAccessoryView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE442CFA1B45A64900F6F3DA"
-            BuildableName = "inputAccessoryViewControllerTest.app"
-            BlueprintName = "inputAccessoryViewControllerTest"
-            ReferencedContainer = "container:inputAccessoryViewControllerTest.xcodeproj">
+            BlueprintIdentifier = "8425246D1B473B0700FC0090"
+            BuildableName = "inputAccessoryView.app"
+            BlueprintName = "inputAccessoryView"
+            ReferencedContainer = "container:inputAccessoryView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE442CFA1B45A64900F6F3DA"
-            BuildableName = "inputAccessoryViewControllerTest.app"
-            BlueprintName = "inputAccessoryViewControllerTest"
-            ReferencedContainer = "container:inputAccessoryViewControllerTest.xcodeproj">
+            BlueprintIdentifier = "8425246D1B473B0700FC0090"
+            BuildableName = "inputAccessoryView.app"
+            BlueprintName = "inputAccessoryView"
+            ReferencedContainer = "container:inputAccessoryView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

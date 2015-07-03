@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>inputAccessoryViewControllerTest.xcscheme</key>
+		<key>inputAccessoryView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EE442CFA1B45A64900F6F3DA</key>
+		<key>8425246D1B473B0700FC0090</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE442D131B45A64900F6F3DA</key>
+		<key>842524861B473B0700FC0090</key>
 		<dict>
 			<key>primary</key>
 			<true/>

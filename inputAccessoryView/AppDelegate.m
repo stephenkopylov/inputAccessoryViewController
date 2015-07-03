@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  inputAccessoryViewControllerTest
+//  inputAccessoryView
 //
-//  Created by rovaev on 02.07.15.
-//  Copyright (c) 2015 rovaev. All rights reserved.
+//  Created by Admin on 04.07.15.
+//  Copyright (c) 2015 Admin. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController =  [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    [self.window makeKeyAndVisible];
+    
+    // Here it is
     return YES;
 }
 
