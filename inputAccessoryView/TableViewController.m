@@ -92,6 +92,10 @@ static BOOL openKeyboard;
 
 - (void)alert
 {
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"test" message:@"test-test-test" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [controller addAction:[UIAlertAction actionWithTitle:@"test" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 
