@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) TextField *textField;
 
+@property (nonatomic) BOOL openKeyboard;
+
 @end

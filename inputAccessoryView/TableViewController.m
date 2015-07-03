@@ -9,17 +9,30 @@
 #import "TableViewController.h"
 #import "inputAccessoryViewController.h"
 #import "UIResponder+FirstResponder.h"
+#import "PushViewController.h"
+
+static BOOL openKeyboard;
 
 @interface TableViewController ()
 @property (nonatomic, readwrite) UIInputViewController *inputAccessoryViewController;
 @end
 
-@implementation TableViewController
+@implementation TableViewController {
+    inputAccessoryViewController *_iavc;
+}
+
+
++ (void)load
+{
+    openKeyboard = NO;
+}
+
 
 - (void)loadView
 {
     [super loadView];
-    self.inputAccessoryViewController = [inputAccessoryViewController new];
+    _iavc = [inputAccessoryViewController new];
+    self.inputAccessoryViewController = _iavc;
 }
 
 
@@ -27,6 +40,17 @@
 {
     [super viewDidLoad];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
+    UIBarButtonItem *firstItem = [[UIBarButtonItem alloc] initWithTitle:@"Alert" style:UIBarButtonItemStylePlain target:self action:@selector(alert)];
+    UIBarButtonItem *secondItem = [[UIBarButtonItem alloc] initWithTitle:@"Push" style:UIBarButtonItemStylePlain target:self action:@selector(push)];
+    
+    self.navigationItem.rightBarButtonItems = @[firstItem, secondItem];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    _iavc.openKeyboard = openKeyboard;
 }
 
 
@@ -41,10 +65,13 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    inputAccessoryViewController *controller = (inputAccessoryViewController *)self.inputAccessoryViewController;
     
-    if ( controller.textField.isFirstResponder ) {
-        [controller.textField resignFirstResponder];
+    if ( _iavc.textField.isFirstResponder ) {
+        openKeyboard = YES;
+        [_iavc.textField resignFirstResponder];
+    }
+    else {
+        openKeyboard = NO;
     }
 }
 
@@ -58,6 +85,19 @@
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
+}
+
+
+#pragma mark - custom methods
+
+- (void)alert
+{
+}
+
+
+- (void)push
+{
+    [self.navigationController pushViewController:[PushViewController new] animated:YES];
 }
 
 

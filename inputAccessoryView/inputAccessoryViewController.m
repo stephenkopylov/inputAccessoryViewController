@@ -20,7 +20,6 @@
 
 - (void)dealloc
 {
-    UITextField *tf = [UIResponder currentFirstResponder];
     NSLog(@"dealloc %@", [UIResponder currentFirstResponder]);
 }
 
@@ -53,7 +52,11 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [_textField becomeFirstResponder];
+    
+    if ( _openKeyboard ) {
+        [_textField becomeFirstResponder];
+    }
+    
     NSLog(@"willAppear %@", [UIResponder currentFirstResponder]);
 }
 
