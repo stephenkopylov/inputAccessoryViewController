@@ -18,6 +18,7 @@
 		8425249F1B47443300FC0090 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425249E1B47443300FC0090 /* TextField.m */; };
 		842524A21B4747D700FC0090 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 842524A11B4747D700FC0090 /* UIResponder+FirstResponder.m */; };
 		842524A51B47551D00FC0090 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842524A41B47551D00FC0090 /* PushViewController.m */; };
+		848076F71B4765BA00BD8894 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848076F61B4765BA00BD8894 /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		842524A11B4747D700FC0090 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		842524A31B47551D00FC0090 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
 		842524A41B47551D00FC0090 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		848076F51B4765BA00BD8894 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		848076F61B4765BA00BD8894 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				8425249B1B473D2A00FC0090 /* inputAccessoryViewController.m */,
 				842524A31B47551D00FC0090 /* PushViewController.h */,
 				842524A41B47551D00FC0090 /* PushViewController.m */,
+				848076F51B4765BA00BD8894 /* ModalViewController.h */,
+				848076F61B4765BA00BD8894 /* ModalViewController.m */,
 			);
 			path = inputAccessoryView;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				8425247A1B473B0700FC0090 /* ViewController.m in Sources */,
 				842524A21B4747D700FC0090 /* UIResponder+FirstResponder.m in Sources */,
 				842524771B473B0700FC0090 /* AppDelegate.m in Sources */,
+				848076F71B4765BA00BD8894 /* ModalViewController.m in Sources */,
 				842524741B473B0700FC0090 /* main.m in Sources */,
 				842524A51B47551D00FC0090 /* PushViewController.m in Sources */,
 				842524991B473C4200FC0090 /* TableViewController.m in Sources */,

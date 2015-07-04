@@ -10,6 +10,7 @@
 #import "inputAccessoryViewController.h"
 #import "UIResponder+FirstResponder.h"
 #import "PushViewController.h"
+#import "ModalViewController.h"
 
 static BOOL openKeyboard;
 
@@ -42,8 +43,9 @@ static BOOL openKeyboard;
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive;
     UIBarButtonItem *firstItem = [[UIBarButtonItem alloc] initWithTitle:@"Alert" style:UIBarButtonItemStylePlain target:self action:@selector(alert)];
     UIBarButtonItem *secondItem = [[UIBarButtonItem alloc] initWithTitle:@"Push" style:UIBarButtonItemStylePlain target:self action:@selector(push)];
+    UIBarButtonItem *thirdItem = [[UIBarButtonItem alloc] initWithTitle:@"Modal" style:UIBarButtonItemStylePlain target:self action:@selector(modal)];
     
-    self.navigationItem.rightBarButtonItems = @[firstItem, secondItem];
+    self.navigationItem.rightBarButtonItems = @[firstItem, secondItem, thirdItem];
 }
 
 
@@ -65,14 +67,15 @@ static BOOL openKeyboard;
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
-    if ( _iavc.textField.isFirstResponder ) {
-        openKeyboard = YES;
-        [_iavc.textField resignFirstResponder];
-    }
-    else {
-        openKeyboard = NO;
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{ //обход прячущейся вниз клавиатуры
+        if ( _iavc.textField.isFirstResponder ) {
+            openKeyboard = YES;
+            [_iavc.textField resignFirstResponder];
+        }
+        else {
+            openKeyboard = NO;
+        }
+    });
 }
 
 
@@ -102,6 +105,12 @@ static BOOL openKeyboard;
 - (void)push
 {
     [self.navigationController pushViewController:[PushViewController new] animated:YES];
+}
+
+
+- (void)modal
+{
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:[ModalViewController new]] animated:YES completion:nil];
 }
 
 
